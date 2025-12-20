@@ -1,0 +1,8 @@
+spring:
+  kafka:
+    bootstrap-servers: dummy:9092
+    consumer:
+      auto-startup: false
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
