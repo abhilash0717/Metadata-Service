@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Component
 public class MetadataConsumer {
 
-    private MetadataService metadataService;
+    private final MetadataService metadataService;
 
     @KafkaListener(
             topics = "document-metadata",
